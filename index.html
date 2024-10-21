@@ -251,6 +251,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
         <section id="contact">
             <h2>Contacto</h2>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+
             <!--<form action="SendMessage" method="post" class="contact-form">
                 <div class="form-group">
                     <label for="name">Nombre:</label>
@@ -286,5 +306,21 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
         <script src="js/script.js"></script> <!-- Ruta al archivo JavaScript -->
         <script src="js/modal.js"></script> <!-- Ruta al archivo JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function(){
+                emailjs.init("qiaOxyllfP7gq-dCy");
+            })();
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Detiene el comportamiento por defecto
+
+                emailjs.sendForm('service_v9f7ezi', 'template_q4eyy3t', this)
+                    .then(function() {
+                        alert('Mensaje enviado correctamente');
+                    }, function(error) {
+                        alert('Error al enviar el mensaje: ' + JSON.stringify(error));
+                    });
+            });
+        </script>
     </body>
 </html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<!DOCTYPE html>
+<html lang="es">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raúl Jiménez | Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/be02131930.js" crossorigin="anonymous"></script>
+        <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="container">
+            <!-- Barra lateral -->
+            <div class="sidebar">
+                <div>
+                    <h2>Raúl Jiménez</h2>
+                    <img src="assets/yo.JPG" alt="Foto de Raúl Jiménez" class="profile-photo">
+                </div>
+                
+                <a id="openModalButton" style="display: block;" class="sidebar-btn1">Iniciar Sesión</a>
+
+                <a href="#" id="logoutButton" style="display: none;" class="sidebar-btn1">Cerrar Sesión</a>
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button">&times;</span>
+                        <h2>Iniciar Sesión</h2>
+                        <form id="loginForm" action="LoginServlet" method="post" class="contact-form">
+                            <div class="form-group">
+                                <label for="adminUsername">Usuario:</label> 
+                                <input type="text" id="adminUsername" name="username" required> 
+                            </div>
+                            <div class="form-group">
+                                <label for="adminPassword">Contraseña:</label>
+                                <input type="password" id="adminPassword" name="password" required>
+                            </div>
+                            <button type="submit" class="btn">Entrar</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="adminButtons" style="display: none;">
+                    <a href="manageProyects" class="sidebar-btn">Gestionar Proyectos</a>
+                    <a href="manageSkills" class="sidebar-btn">Gestionar Skills</a>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#education">Educación</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+            <!-- Contenido principal -->
+            <div class="main-content">
+                <h1>Raúl Jiménez</h1>
+                <h2>Ingeniero Informático</h2>
+                <p>Bienvenidx a mi portfolio profesional.</p>
+                <a href="downloadCV" class="btn">Descarga mi CV</a>
+
+                <!-- Iconos sociales -->
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rauljz" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/JisuRaul" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rauljzz" target="_blank"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Secciones -->
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Estudiante de Ingeniería informática especializada en computación. Apasionado por la resolución de problemas y la optimización de procesos. Capaz de trabajar en equipo y adaptarse a entornos dinámicos. 
+                Busco oportunidades para aplicar mis habilidades y contribuir al éxito de proyectos desafiantes en el campo de la tecnología.</p>
+
+            <p>Computer Engineering student specializing in computation. Passionate about problem-solving and process optimization. Capable of working in a team and adapting to dynamic environments. 
+                Seeking opportunities to apply my skills and contribute to the success of challenging projects in the technology field.</p>
+        </section>
+
+
+
+
+
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="project-cards">
+                <!-- Tarjeta de Proyecto 1 -->
+                <div class="project-card">
+                    <img src="assets/etsi.jpg" alt="Computer-Engineering-UHU">
+                    <h3>Computer-Engineering-UHU</h3>
+                    <p>Repositorio donde publico todo el contenido de la carrera de Ingeniería Informática en Huelva .</p>
+                    <div class="tech-icons">
+                        <span class="tech-icon">C++</span>
+                        <span class="tech-icon">Java</span>
+                        <span class="tech-icon">Matlab</span>
+                        <span class="tech-icon">Python</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rauljz/Computer-Engineering-UHU" target="_blank">
+                            <i class="fa fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 2 -->
+                <div class="project-card">
+                    <img src="assets/data_science.jpg" alt="DataScience_Bootcamp">
+                    <h3>DataScience_Bootcamp</h3>
+                    <p>Este repositorio tiene como objetivo proporcionar una ruta completa de aprendizaje de ciencia de datos para aquellos que estén interesados ​​en aprender ciencia de datos.</p>
+                    <div class="tech-icons">
+                        <span class="tech-icon">Python</span>
+                        <span class="tech-icon">R</span>
+                        <span class="tech-icon">SQL</span>
+                        <span class="tech-icon">ML/DL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rauljz/DataScience_Bootcamp" target="_blank">
+                            <i class="fa fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Tarjeta de Proyecto 3 -->
+                <div class="project-card">
+                    <img src="assets/prolog.jpg" alt="Prolog">
+                    <h3>Prolog</h3>
+                    <p>Ejercicios y codigos para la introducción al lenguaje declarativo Prolog.</p>
+                    <div class="tech-icons">
+                        <span class="tech-icon">Prolog</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rauljz/Prolog" target="_blank">
+                            <i class="fa fa-github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="education">
+            <h2>Experiencia 🧑‍💻</h2>
+            <div class="experience-item">
+                <img src="assets/nttdata.png" alt="Logotipo de NTT DATA" style="width: 100px; height: auto;">
+                <h3>Prácticas en NTT DATA Europe & Latam</h3>
+                <p><strong>Duración:</strong> jul. 2024 - sept. 2024 (3 meses)</p>
+                <p><strong>Ubicación:</strong> Sevilla, Andalucía, España · Híbrido</p>
+                <ul>
+                    <li>Realización de tareas de mantenimiento para diversas aplicaciones de usuario.</li>
+                    <li>Desarrollo de aplicaciones de cliente utilizando el lenguaje de programación Python.</li>
+                    <li>Participación en reuniones con usuarios finales, aportando ideas y visiones sobre nuevas mejoras y evoluciones desarrolladas.</li>
+                    <li>Ampliación de conocimientos en tecnologías de Machine Learning y procesos ETL.</li>
+                    <li>Comprensión del negocio del cliente en el sector de energías.</li>
+                    <li>Gestión y ejecución de tareas de despliegue en diferentes entornos de producción y manejo de versiones del aplicativo.</li>
+                </ul>
+            </div>
+
+            <h2>Educación 🎓</h2>
+            <div class="education-item">
+                <img src="assets/UHU.png" alt="Logotipo de Universidad de Huelva" style="width: 100px; height: auto;">
+                <h3>Universidad de Huelva</h3>
+                <p><strong>Título:</strong> Ingeniería Informática, Computación</p>
+                <p><strong>Duración:</strong> sept. 2021 - jul. 2025</p>
+            </div>
+
+            <div class="education-item">
+                <img src="assets/trinity.jpg" alt="Logotipo de Trinity College Dublin" style="width: 100px; height: auto;">
+                <h3>Trinity College Dublin</h3>
+                <p><strong>Título:</strong> B1, Enseñanza de inglés como lengua extranjera</p>
+                <p><strong>Duración:</strong> ene. 2018 - jun. 2018</p>
+            </div>
+
+            <h2>Licencias y certificaciones 📜</h2>
+            <div class="certification-item">
+                <img src="assets/UDEMY.png" alt="Logotipo de Udemy" style="width: 100px; height: auto;">
+                <h3>The Data Science Course: Complete Data Science Bootcamp 2024</h3>
+                <p><strong>Expedición:</strong> ago. 2024</p>
+                <p><strong>ID de la credencial:</strong> UC-29308443-ca19-4a9b-acb7-455802922f2d</p>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div>
+                <h3>Lenguajes</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
+                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+                    <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Shell Script">
+                    <img src="https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white" alt="C#">
+                    <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
+                    <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB">
+                </p>
+            </div>
+            <div>
+                <h3>Machine Learning/Deep Learning</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+                    <img src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="scikit-learn">
+                    <img src="https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+                    <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy">
+                    <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas">
+                    <img src="https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white" alt="Plotly">
+                </p>
+            </div>
+            <div>
+                <h3>Base de Datos</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+                    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+                </p>
+            </div>
+            <div>
+                <h3>Herramientas y Tecnologías</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+                    <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+                </p>
+            </div>
+            <div>
+                <h3>IDEs</h3>
+                <p>
+                    <img src="https://img.shields.io/badge/Eclipse-FE7A16.svg?style=for-the-badge&logo=Eclipse&logoColor=white" alt="Eclipse">
+                    <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter Notebook">
+                    <img src="https://img.shields.io/badge/pycharm-143?style=for-the-badge&logo=pycharm&logoColor=black&color=black&labelColor=green" alt="PyCharm">
+                    <img src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="Visual Studio Code">
+                </p>
+            </div>
+        </section>
+
+
+
+
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form action="SendMessage" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+               <div class="g-recaptcha" data-sitekey="6Lf-UmIqAAAAAJAESm5eUzPMGcpbUkQZR7GKpB2M"></div>
+                <br/>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+
+
+
+            <!-- Iconos sociales -->
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rauljz" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/JisuRaul" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rauljzz" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+
+        <script src="js/script.js"></script> <!-- Ruta al archivo JavaScript -->
+        <script src="js/modal.js"></script> <!-- Ruta al archivo JavaScript -->
+    </body>
+</html>

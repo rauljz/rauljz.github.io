@@ -34,7 +34,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     </ul>
                 </nav>
             </div>
-
+            
+            <div class="menu-toggle">
+                <button id="menu-btn">☰</button>
+            </div>
 
             <!-- Contenido principal -->
             <div class="main-content">
@@ -268,6 +271,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                     }, function(error) {
                         alert('Error al enviar el mensaje: ' + JSON.stringify(error));
                     });
+            });
+        </script>
+        <script>
+            document.getElementById('menu-btn').addEventListener('click', function() {
+                const sidebar = document.querySelector('.sidebar');
+                sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
             });
         </script>
     </body>

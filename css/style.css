@@ -14,43 +14,30 @@ body {
     color: #333; /* Color de texto gris oscuro */
 }
 
-/* Estilos para tabletas */
-@media (max-width: 1024px) {
+/* Ocultar la barra lateral en móviles */
+@media (max-width: 768px) {
     .sidebar {
-        width: 200px;
+        display: none; /* Oculta la barra lateral */
     }
+
     .main-content {
-        margin-left: 200px;
-    }
-    .project-cards {
-        grid-template-columns: repeat(2, 1fr);
+        margin-left: 0; /* Sin margen para la barra lateral */
+        width: 100%; /* Asegúrate de que ocupe todo el ancho */
+        padding: 20px; /* Ajusta el padding si es necesario */
     }
 }
 
-/* Estilos para móviles */
+/* Mostrar menú de hamburguesa en móviles */
+.menu-toggle {
+    display: none; /* Oculta el botón en pantallas grandes */
+}
+
 @media (max-width: 768px) {
-    .sidebar {
-        width: 100%;
-        position: relative;
-        height: auto;
-    }
-    .main-content {
-        margin-left: 0;
-    }
-    .project-cards {
-        grid-template-columns: 1fr;
-    }
-    .main-content h1 {
-        font-size: 36px;
-    }
-    .main-content h2 {
-        font-size: 24px;
-    }
-    img {
-        max-width: 100%;
-        height: auto;
+    .menu-toggle {
+        display: block; /* Muestra el botón en móviles */
     }
 }
+
 
 /* Contenedor principal */
 .container {

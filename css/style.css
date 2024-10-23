@@ -371,17 +371,18 @@ html {
         padding: 10px 0; /* Espacio arriba y abajo del menú */
         background-color: #f7f7f7; /* Color de fondo opcional */
         text-decoration: none;
-        color: #0073e6; /* Azul suave */
+        background-color: #f7f7f7; /* Color de fondo opcional */
+        
     }
 
     .horizontal-nav a {
         margin: 0 15px; /* Espacio entre los enlaces */
         text-decoration: none; /* Quita el subrayado */
-        color: #333; /* Color del texto */
+        color: #0073e6; /* Azul suave */
     }
 
     .horizontal-nav a:hover {
-        color: #007BFF; /* Cambia el color al pasar el ratón */
+        color: #005bb5; /* Azul más oscuro al hacer hover */
     }
 
   /* Inicialmente ocultar la barra lateral */

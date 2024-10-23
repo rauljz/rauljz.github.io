@@ -111,6 +111,15 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
 }
 
+.profile-photo1 {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 20%; /* Hacer la imagen circular */
+    margin: 20px auto; /* Margen arriba y abajo, auto a los lados */
+    display: none; /* Asegura que la imagen sea un bloque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
 
 /* Contenido principal */
 .main-content {
@@ -363,6 +372,10 @@ html {
 
 /* Ocultar la barra lateral en móviles */
 @media screen and (max-width: 800px) {
+
+    .profile-photo1 {
+        display: block; /* Asegura que la imagen sea un bloque */
+    }
 
     .horizontal-nav {
         display: flex; /* Muestra el menú en dispositivos móviles */

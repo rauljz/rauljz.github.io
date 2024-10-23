@@ -413,6 +413,9 @@ html {
   }
 
   .project-cards {
-        grid-template-columns: 1fr; /* 1 columna */
+    grid-template-columns: 1fr; /* 1 columna */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 }

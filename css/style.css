@@ -15,7 +15,7 @@ body {
 }
 
 /* Ocultar la barra lateral en móviles */
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
   /* Mostrar el botón de menú en móviles */
   .menu-toggle {
     display: block;

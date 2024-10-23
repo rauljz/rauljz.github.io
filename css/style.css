@@ -357,8 +357,30 @@ html {
     cursor: pointer; /* Cambiar cursor */
 }
 
+.horizontal-nav {
+    display: none; /* Oculta el menú por defecto */
+}
+
 /* Ocultar la barra lateral en móviles */
 @media screen and (max-width: 800px) {
+
+    .horizontal-nav {
+        display: flex; /* Muestra el menú en dispositivos móviles */
+        justify-content: center; /* Centra el menú en el contenedor */
+        margin-top: 20px; /* Espacio arriba del menú */
+        padding: 10px 0; /* Espacio arriba y abajo del menú */
+        background-color: #f7f7f7; /* Color de fondo opcional */
+    }
+
+    .horizontal-nav a {
+        margin: 0 15px; /* Espacio entre los enlaces */
+        text-decoration: none; /* Quita el subrayado */
+        color: #333; /* Color del texto */
+    }
+
+    .horizontal-nav a:hover {
+        color: #007BFF; /* Cambia el color al pasar el ratón */
+    }
 
   /* Inicialmente ocultar la barra lateral */
   .sidebar {

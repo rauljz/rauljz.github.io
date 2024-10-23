@@ -400,8 +400,7 @@ html {
   /* Contenedor para las tarjetas */
   .project-cards {
     display: grid;
-    grid-template-columns: repeat 1fr; /* 3 columnas */
-    gap: 20px; /* Espacio entre las tarjetas */
+    grid-template-columns: repeat 1fr; 
     margin-top: 0px;
  }
 }

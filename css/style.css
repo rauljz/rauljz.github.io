@@ -16,20 +16,25 @@ body {
 
 /* Ocultar la barra lateral en móviles */
 @media (max-width: 768px) {
-    .sidebar {
-        display: none; /* Oculta la barra lateral */
-    }
+  /* Mostrar el botón de menú en móviles */
+  .menu-toggle {
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
 
-    .main-content {
-        margin-left: 0; /* Sin margen para la barra lateral */
-        width: 100%; /* Asegúrate de que ocupe todo el ancho */
-        padding: 20px; /* Ajusta el padding si es necesario */
-    }
-}
-
-/* Mostrar menú de hamburguesa en móviles */
-.menu-toggle {
-    display: none; /* Oculta el botón en pantallas grandes */
+  /* Inicialmente ocultar la barra lateral */
+  .sidebar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 1;
+  }
 }
 
 @media (max-width: 768px) {
@@ -38,6 +43,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+  .social-icons i {
+    font-size: 1.5rem; /* Ajustar el tamaño de los iconos en móviles */
+    margin: 5px;
+  }
+}
 
 /* Contenedor principal */
 .container {

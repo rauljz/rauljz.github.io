@@ -401,14 +401,18 @@ html {
     margin-left: 250px; /* Dejar espacio para la barra lateral */
   }
 
-   h2 {
-    font-size: 20px; /* Tamaño de fuente más pequeño en móviles */
-    margin-top: 10px; /* Añadir margen superior para espacio adicional */
-    line-height: 1.5; /* Aumentar el espacio entre líneas para mejor legibilidad */
-    padding: 5px; /* Añadir espaciado interno si es necesario */
-   }
+  section {
+    flex-grow: 1;
+    margin-left: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
 
-    .project-cards {
+  .project-cards {
         grid-template-columns: 1fr; /* 1 columna */
-    }
+  }
 }

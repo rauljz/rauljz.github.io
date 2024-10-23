@@ -258,21 +258,6 @@ body {
     margin-right: 5px;
 }
 
-/* Responsivo: ajustar a 2 columnas en pantallas medianas */
-@media (max-width: 1024px) {
-    .project-cards {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas */
-    }
-}
-
-/* Responsivo: ajustar a 1 columna en pantallas pequeñas */
-@media (max-width: 768px) {
-    .project-cards {
-        grid-template-columns: 1fr; /* 1 columna */
-    }
-}
-
-
 section {
     flex-grow: 1;
     margin-left: 270px; /* Deja espacio para la barra lateral */
@@ -415,5 +400,15 @@ html {
   .sidebar.active + .main-content {
     margin-left: 250px; /* Dejar espacio para la barra lateral */
   }
-}
 
+   h2 {
+    font-size: 20px; /* Tamaño de fuente más pequeño en móviles */
+    margin-top: 10px; /* Añadir margen superior para espacio adicional */
+    line-height: 1.5; /* Aumentar el espacio entre líneas para mejor legibilidad */
+    padding: 5px; /* Añadir espaciado interno si es necesario */
+   }
+
+    .project-cards {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+}

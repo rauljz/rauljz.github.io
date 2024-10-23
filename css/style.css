@@ -377,8 +377,8 @@ html {
 
     .horizontal-nav a {
         position: inline-block;
-        margin: 0 15px; /* Espacio entre los enlaces */  
-        padding: 10px 20px; /* Espacio interno del botón */
+        margin: 0 10px; /* Espacio entre los enlaces */  
+        padding: 5px 15px; /* Espacio interno del botón */
         background-color: #007BFF; /* Color de fondo del botón */
         color: white; /* Color del texto */
         border-radius: 50px; /* Hace los bordes circulares */

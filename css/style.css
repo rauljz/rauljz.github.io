@@ -388,11 +388,20 @@ html {
     text-align: center;
     padding: 20px;
   }
-
-  .project-cards {
-    grid-template-columns: 1fr; /* 1 columna */
-    justify-content: center;
-    align-items: center;
+    
+  /* Sección de portfolio */
+  #portfolio {
+    margin-left: 0; /* Ajustar por el sidebar */
+    padding: 40px;
+    background-color: #f7f7f7;
     text-align: center;
-  }
+ }
+
+  /* Contenedor para las tarjetas */
+  .project-cards {
+    display: grid;
+    grid-template-columns: repeat 1fr; /* 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 0px;
+ }
 }

@@ -45,6 +45,7 @@ body {
 
 /* Barra lateral */
 .sidebar {
+    display: block;
     width: 250px;
     background-color: #ffffff; /* Blanco limpio */
     padding: 20px;

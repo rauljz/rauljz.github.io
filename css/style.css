@@ -359,17 +359,6 @@ html {
 
 /* Ocultar la barra lateral en móviles */
 @media screen and (max-width: 800px) {
-  /* Mostrar el botón de menú en móviles */
-  .menu-toggle {
-    display: none;
-    background-color: #333; /* Color de fondo del botón */
-    color: white; /* Color del texto */
-    border: none; /* Sin borde */
-    padding: 10px; /* Espaciado interno */
-    font-size: 20px; /* Tamaño de la fuente */
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
-    margin: 10px; /* Margen alrededor del botón */
-  }
 
   /* Inicialmente ocultar la barra lateral */
   .sidebar {
@@ -383,22 +372,10 @@ html {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
   }
 
-  /* Mostrar la barra lateral cuando esté activa */
-  .sidebar.active {
-    display: flex; /* Mostrar como flexbox */
-    flex-direction: column; /* Apilar elementos verticalmente */
-    height: 100vh; /* Altura completa de la vista */
-  }
-
   /* Ajustar el contenido principal al mostrar la barra lateral */
   .main-content {
     margin-left: 0; /* Sin margen a la izquierda cuando la barra lateral está oculta */
     transition: margin-left 0.3s ease; /* Transición suave para el cambio de margen */
-  }
-
-  /* Cuando la barra lateral está activa */
-  .sidebar.active + .main-content {
-    margin-left: 250px; /* Dejar espacio para la barra lateral */
   }
 
   section {

@@ -370,6 +370,8 @@ html {
         margin-top: 20px; /* Espacio arriba del menú */
         padding: 10px 0; /* Espacio arriba y abajo del menú */
         background-color: #f7f7f7; /* Color de fondo opcional */
+        text-decoration: none;
+        color: #0073e6; /* Azul suave */
     }
 
     .horizontal-nav a {

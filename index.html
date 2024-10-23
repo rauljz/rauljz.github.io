@@ -17,8 +17,11 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
     </head>
     <body>
         <div class="container">
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Menú</button>
+            
             <!-- Barra lateral -->
-            <div class="sidebar">
+            <div class="sidebar" id="sidebar">
                 <div>
                     <h2>Raúl Jiménez</h2>
                     <img src="assets/yo.JPG" alt="Foto de Raúl Jiménez" class="profile-photo">
@@ -35,9 +38,6 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 </nav>
             </div>
             
-            <div class="menu-toggle">
-                <button id="menu-btn">☰</button>
-            </div>
 
             <!-- Contenido principal -->
             <div class="main-content">
@@ -274,10 +274,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             });
         </script>
         <script>
-            document.getElementById('menu-btn').addEventListener('click', function() {
-                const sidebar = document.querySelector('.sidebar');
-                sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
-            });
+            function toggleMenu() {
+              const sidebar = document.getElementById('sidebar');
+              if (sidebar.style.display === 'block') {
+                    sidebar.style.display = 'none';
+              } else {
+                sidebar.style.display = 'block';
+              }
+            }
         </script>
     </body>
 </html>

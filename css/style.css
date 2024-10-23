@@ -37,19 +37,6 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: block; /* Muestra el botón en móviles */
-    }
-}
-
-@media (max-width: 768px) {
-  .social-icons i {
-    font-size: 1.5rem; /* Ajustar el tamaño de los iconos en móviles */
-    margin: 5px;
-  }
-}
-
 /* Contenedor principal */
 .container {
     display: flex;

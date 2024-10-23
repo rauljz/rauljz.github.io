@@ -400,7 +400,7 @@ html {
   /* Contenedor para las tarjetas */
   .project-cards {
     display: grid;
-    grid-template-columns: repeat 1fr; 
+    grid-template-columns: 1fr; 
     margin-top: 0px;
  }
 }

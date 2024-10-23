@@ -14,29 +14,6 @@ body {
     color: #333; /* Color de texto gris oscuro */
 }
 
-/* Ocultar la barra lateral en móviles */
-@media screen and (max-width: 800px) {
-  /* Mostrar el botón de menú en móviles */
-  .menu-toggle {
-    display: block;
-    background-color: #333;
-    color: white;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-
-  /* Inicialmente ocultar la barra lateral */
-  .sidebar {
-    display: none;
-    position: absolute;
-    width: 100%;
-    background-color: #f8f9fa;
-    z-index: 1;
-  }
-}
-
 /* Contenedor principal */
 .container {
     display: flex;
@@ -393,5 +370,28 @@ html {
     color: #000; /* Color negro al pasar el mouse */
     text-decoration: none; /* Sin subrayado */
     cursor: pointer; /* Cambiar cursor */
+}
+
+/* Ocultar la barra lateral en móviles */
+@media screen and (max-width: 800px) {
+  /* Mostrar el botón de menú en móviles */
+  .menu-toggle {
+    display: block;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  /* Inicialmente ocultar la barra lateral */
+  .sidebar {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #f8f9fa;
+    z-index: 1;
+  }
 }
 

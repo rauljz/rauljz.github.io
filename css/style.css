@@ -26,7 +26,6 @@ body {
     width: 250px;
     background-color: #ffffff; /* Blanco limpio */
     padding: 20px;
-    padding-bottom: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     position: fixed;
     display: flex;
@@ -40,6 +39,7 @@ body {
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .sidebar nav ul li {

@@ -448,7 +448,7 @@ html {
     margin-top: 0px;
  }
 
-  #contact{
-    margin-top: 90px;
+  #contact {
+    padding-top: 50px; /* Ajusta según necesites */
   }
 }

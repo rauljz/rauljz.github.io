@@ -447,8 +447,4 @@ html {
     grid-template-columns: 1fr; 
     margin-top: 0px;
  }
-
-  #contact {
-    padding-top: 200px; /* Ajusta según necesites */
-  }
 }

@@ -1,0 +1,478 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 3 oct 2024, 15:51:16
+    Author     : usuario
+*/
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7; /* Color de fondo blanco suave */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.language-selector button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.language-selector button:hover {
+    background-color: #0056b3;
+}
+
+/* Ocultar la barra superior de Google Translate */
+#google_translate_element {
+    display: none;
+}
+
+/* Barra lateral */
+.sidebar {
+    display: block;
+    width: 250px;
+    background-color: #ffffff; /* Blanco limpio */
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: fixed;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo de la barra de navegación */
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #0073e6; /* Azul suave */
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px 20px; /* Espaciado interno para los enlaces */
+    transition: background-color 0.3s ease; /* Transición suave del color */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+}
+
+.sidebar nav ul li a.active {
+    color: #fff; /* Cambia el color del texto */
+    background-color: #0073e6; /* Color de fondo al estar activo */
+    border-radius: 80px; /* Bordes redondeados para hacerlo rectangular */
+    padding: 10px 20px; /* Espaciado interno para aumentar el tamaño del rectángulo */
+    text-align: center; /* Centrar el texto */
+    display: inline-block; /* Asegúrate de que el enlace se comporte como un bloque */
+}
+
+.sidebar-btn1 {
+    display: block; /* Para que ocupen toda la línea */
+    width: 100%; /* Hacer que los botones sean del ancho de la barra lateral */
+    padding: 10px; /* Espaciado interno del botón */
+    margin: 5px 0; /* Margen entre botones */
+    background-color: #0073e6; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+.sidebar-btn1:hover {
+    background-color: #005bb5; /* Azul más oscuro al hacer hover */
+}
+
+.sidebar-btn {
+    display: block; /* Para que ocupen toda la línea */
+    width: 100%; /* Hacer que los botones sean del ancho de la barra lateral */
+    padding: 10px; /* Espaciado interno del botón */
+    margin: 5px 0; /* Margen entre botones */
+    background-color: #0073e6; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
+}
+
+.sidebar-btn:hover {
+    background-color: #005bb5; /* Azul más oscuro al hacer hover */
+}
+
+
+.profile-photo {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 20%; /* Hacer la imagen circular */
+    margin: 20px auto; /* Margen arriba y abajo, auto a los lados */
+    display: block; /* Asegura que la imagen sea un bloque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+.profile-photo1 {
+    width: 100px; /* Ancho de la imagen */
+    height: auto; /* Mantener la proporción */
+    border-radius: 20%; /* Hacer la imagen circular */
+    margin: 20px auto; /* Margen arriba y abajo, auto a los lados */
+    display: none; /* Asegura que la imagen sea un bloque */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para darle profundidad */
+}
+
+
+/* Contenido principal */
+.main-content {
+    flex-grow: 1;
+    margin-left: 250px; /* Deja espacio para la barra lateral */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título principal */
+.main-content h1 {
+    font-size: 56px;
+    color: #333; /* Gris oscuro */
+    margin: 0;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    color: #555; /* Gris intermedio */
+    margin: 10px 0;
+}
+
+/* Descripción */
+.main-content p {
+    font-size: 18px;
+    color: #666; /* Gris suave */
+}
+
+/* Botón de descarga */
+.btn {
+    background-color: #0073e6; /* Azul Google */
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover para el botón */
+.btn:hover {
+    background-color: #005bb5; /* Azul más oscuro al hacer hover */
+}
+
+/* Estilo de iconos sociales */
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #0073e6; /* Azul suave para iconos */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover para los iconos sociales */
+.social-icons a:hover {
+    color: #005bb5; /* Azul más oscuro */
+}
+
+/* Sección de portfolio */
+#portfolio {
+    margin-left: 270px; /* Ajustar por el sidebar */
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+/* Contenedor para las tarjetas */
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #f7f7f7; /* Fondo de la tarjeta */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    color: #fff; /* Texto blanco */
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Efecto hover */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    color: #0073e6; /* Morado para el nombre del proyecto */
+    margin-top: 10px;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #666; /* Gris claro para la descripción */
+}
+
+.tech-icons {
+    margin: 15px 0;
+}
+
+.tech-icon {
+    display: inline-block;
+    background-color: #0073e6; /* Azul para las tecnologías */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.project-links a {
+    margin: 10px 15px;
+    text-decoration: none;
+    color: #0073e6;
+    font-size: 18px;
+}
+
+.project-links a:hover {
+    color: #005bb5; /* Azul más oscuro al hacer hover */
+}
+
+.project-links i {
+    margin-right: 5px;
+}
+
+section {
+    flex-grow: 1;
+    margin-left: 270px; /* Deja espacio para la barra lateral */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px; /* Espaciado alrededor de cada sección */
+    background-color: #f7f7f7; /* Color de fondo */
+    border-bottom: 1px solid #ddd; /* Línea divisoria */
+}
+
+/* Estilo para el formulario de contacto */
+.contact-form {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px;
+    margin: 0 auto; /* Centrar el formulario */
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333; /* Gris oscuro */
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #0073e6; /* Borde azul cuando está en foco */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 115, 230, 0.3); /* Sombra azul cuando está en foco */
+}
+
+h2 {
+    margin-top: 0; /* Elimina el margen superior */
+}
+
+h3 {
+    color: #555; /* Gris intermedio */
+}
+
+html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
+
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed; /* Mantener el modal en la misma posición */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    left: 0;
+    top: 0;
+    width: 100%; /* Ancho completo */
+    height: 100%; /* Alto completo */
+    overflow: auto; /* Agregar scroll si es necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+}
+
+.modal-content {
+    background-color: #fff; /* Fondo blanco */
+    margin: 15% auto; /* Centrando el modal */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 90%; /* Ancho del modal */
+    max-width: 400px; /* Ancho máximo */
+    text-align: center; /* Centrar texto */
+}
+
+.close-button {
+    color: #aaa; /* Color gris para el botón de cerrar */
+    float: right; /* Posicionar a la derecha */
+    font-size: 28px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000; /* Color negro al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambiar cursor */
+}
+
+.horizontal-nav {
+    display: none; /* Oculta el menú por defecto */
+}
+
+/* Ocultar la barra lateral en móviles */
+@media screen and (max-width: 800px) {
+
+    .profile-photo1 {
+        display: block; /* Asegura que la imagen sea un bloque */
+    }
+
+    .horizontal-nav {
+        display: flex; /* Muestra el menú en dispositivos móviles */
+        justify-content: center; /* Centra el menú en el contenedor */
+        margin-top: 20px; /* Espacio arriba del menú */
+        padding: 10px 0; /* Espacio arriba y abajo del menú */
+        background-color: #f7f7f7; /* Color de fondo opcional */
+        text-decoration: none;
+        background-color: #f7f7f7; /* Color de fondo opcional */
+        
+    }
+
+    .horizontal-nav a {
+        position: inline-block;
+        margin: 0 1px; /* Espacio entre los enlaces */  
+        padding: 5px 15px; /* Espacio interno del botón */
+        background-color: #007BFF; /* Color de fondo del botón */
+        color: white; /* Color del texto */
+        border-radius: 50px; /* Hace los bordes circulares */
+        text-decoration: none; /* Quita el subrayado del enlace */
+        font-size: 16px; /* Ajusta el tamaño del texto */
+        transition: background-color 0.3s ease; /* Transición suave en el hover */
+    }
+
+    .horizontal-nav a:hover {
+        color: #005bb5; /* Azul más oscuro al hacer hover */
+    }
+
+  /* Inicialmente ocultar la barra lateral */
+  .sidebar {
+    display: none; /* Ocultar la barra lateral por defecto */
+    position: absolute; /* Posición absoluta para que no afecte el flujo del documento */
+    width: 100%; /* Ancho completo */
+    background-color: #f8f9fa; /* Fondo de la barra lateral */
+    z-index: 1; /* Asegurar que esté encima de otros elementos */
+    top: 0; /* Alineado al tope de la página */
+    left: 0; /* Alineado a la izquierda */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  }
+
+  /* Ajustar el contenido principal al mostrar la barra lateral */
+  .main-content {
+    margin-left: 0; /* Sin margen a la izquierda cuando la barra lateral está oculta */
+    transition: margin-left 0.3s ease; /* Transición suave para el cambio de margen */
+  }
+
+  section {
+    flex-grow: 1;
+    margin-left: 0; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+    
+  /* Sección de portfolio */
+  #portfolio {
+    margin-left: 0; /* Ajustar por el sidebar */
+    padding: 40px;
+    background-color: #f7f7f7;
+    text-align: center;
+ }
+
+  /* Contenedor para las tarjetas */
+  .project-cards {
+    display: grid;
+    grid-template-columns: 1fr; 
+    margin-top: 0px;
+ }
+}

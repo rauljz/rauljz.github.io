@@ -28,7 +28,7 @@ body {
 }
 
 .language-selector button {
-    background-color: #007bff;
+    background-color: #0073e6; /* Azul suave */
     color: white;
     border: none;
     padding: 8px 12px;
@@ -39,7 +39,7 @@ body {
 }
 
 .language-selector button:hover {
-    background-color: #0056b3;
+    background-color: #005bb5; /* Azul más oscuro al hacer hover */
 }
 
 /* Ocultar la barra superior de Google Translate */

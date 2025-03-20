@@ -60,13 +60,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    
 }
 
 /* Estilo de la barra de navegación */
 .sidebar nav ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .sidebar nav ul li {

@@ -414,7 +414,7 @@ html {
         background-color: #f7f7f7; /* Color de fondo opcional */
         text-decoration: none;
         background-color: #f7f7f7; /* Color de fondo opcional */
-        
+        flex-wrap: wrap;
     }
 
     .horizontal-nav a {
@@ -477,3 +477,15 @@ html {
     margin-top: 0px;
  }
 }
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .horizontal-nav a {
+        flex: 0 0 calc(50% - 2px); /* Cada enlace ocupa el 50% del ancho de la fila, ajustando el espacio entre ellos */
+        text-align: center; /* Centra el texto dentro del enlace */
+        margin: 5px 0; /* Añade espacio vertical entre filas */
+    }
+
+    .language-selector {
+        display: none;
+    }
+}  

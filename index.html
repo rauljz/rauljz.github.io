@@ -240,7 +240,125 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </section>
 
 
+        <section id="demos">
+            <h2>Live Demos 🎮</h2>
+            <p style="margin-bottom: 20px; color: #666;">Interactive demos running in your browser.</p>
 
+            <div class="demos-header">
+                <div class="demo-filters" id="demo-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="ml">ML</button>
+                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="llm">LLM</button>
+                </div>
+                <div class="demo-actions">
+                    <button id="expand-all">Expand All</button>
+                    <span>|</span>
+                    <button id="collapse-all">Collapse All</button>
+                </div>
+            </div>
+
+            <div class="demos-grid" id="demos-grid">
+                
+                <div class="demo-card" data-category="ml">
+                    <div class="demo-card-header">
+                        <div class="demo-title">
+                            <h3>K-Means Clustering</h3>
+                            <p>Unsupervised clustering in 2D</p>
+                        </div>
+                        <span class="demo-toggle">+</span>
+                    </div>
+                    <div class="demo-card-content">
+                        <div class="demo-interactive-area" style="padding: 15px; text-align: center;">
+                            <canvas id="kmeans-canvas" width="300" height="200" style="background: #f0f0f0; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
+                            <div style="margin-top: 10px; gap: 10px; display: flex; justify-content: center;">
+                                <button id="kmeans-generate" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">Generate Data</button>
+                                <button id="kmeans-step" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Run 1 Step</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-card" data-category="llm">
+                    <div class="demo-card-header">
+                        <div class="demo-title">
+                            <h3>Text Tokenizer</h3>
+                            <p>Visualisation of tokenisation for LLMs</p>
+                        </div>
+                        <span class="demo-toggle">+</span>
+                    </div>
+                    <div class="demo-card-content">
+                        <div class="demo-interactive-area" style="padding: 15px;">
+                            <textarea id="tokenizer-input" rows="3" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: monospace; resize: none;" placeholder="Escribe algo aquí..."></textarea>
+                            <button id="tokenize-btn" style="margin-top: 10px; padding: 8px 15px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;">Tokenize Text</button>
+                            <div id="tokenizer-output" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 4px; font-family: monospace; font-size: 14px;">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-card" data-category="cv">
+                    <div class="demo-card-header">
+                        <div class="demo-title">
+                            <h3>Object Detection</h3>
+                            <p>Simulation of Bounding Boxes and Confidence</p>
+                        </div>
+                        <span class="demo-toggle">+</span>
+                    </div>
+                    <div class="demo-card-content">
+                        <div class="demo-interactive-area" style="padding: 15px; text-align: center;">
+                            <canvas id="od-canvas" width="300" height="150" style="background: #e2e8f0; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
+                            <div style="margin-top: 10px;">
+                                <button id="od-detect-btn" style="padding: 6px 12px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;">Run Inference</button>
+                                <button id="od-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-card" data-category="ml">
+                    <div class="demo-card-header">
+                        <div class="demo-title">
+                            <h3>Gradient Descent</h3>
+                            <p>Optimisation of the local minimum</p>
+                        </div>
+                        <span class="demo-toggle">+</span>
+                    </div>
+                    <div class="demo-card-content">
+                        <div class="demo-interactive-area" style="padding: 15px; text-align: center;">
+                            <canvas id="gd-canvas" width="300" height="150" style="background: #f8fafc; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
+                            <div style="margin-top: 10px;">
+                                <button id="gd-step-btn" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Iterate (Step)</button>
+                                <button id="gd-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="demo-card" data-category="ml">
+                    <div class="demo-card-header">
+                        <div class="demo-title">
+                            <h3>Activation Functions</h3>
+                            <p>Non-linear transformation visualiser</p>
+                        </div>
+                        <span class="demo-toggle">+</span>
+                    </div>
+                    <div class="demo-card-content">
+                        <div class="demo-interactive-area" style="padding: 15px; text-align: center;">
+                            <canvas id="af-canvas" width="300" height="150" style="background: #fff; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
+                            <div style="margin-top: 10px;">
+                                <select id="af-select" style="padding: 6px; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins';">
+                                    <option value="relu">ReLU</option>
+                                    <option value="sigmoid">Sigmoid</option>
+                                    <option value="tanh">Tanh</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+        </section>
 
 
 

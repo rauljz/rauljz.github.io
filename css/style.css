@@ -399,6 +399,119 @@ html {
     display: none; /* Oculta el menú por defecto */
 }
 
+/* --- DEMOS SECTION --- */
+.demos-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.demo-filters {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: #1c3c3c; /* Usando un color oscuro que vi en tus badges */
+    color: white;
+    border-color: #1c3c3c;
+}
+
+.demo-actions button {
+    background: none;
+    border: none;
+    color: #00599C;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.demo-actions button:hover {
+    text-decoration: underline;
+}
+
+.demos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.demo-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #fff;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.demo-card:hover {
+    border-color: #00599C;
+}
+
+.demo-card-header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.demo-title h3 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.demo-title p {
+    margin: 5px 0 0 0;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.demo-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+}
+
+.demo-card-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background: #f9f9f9;
+}
+
+/* Clase que se activa con JS */
+.demo-card.expanded .demo-card-content {
+    max-height: 500px; /* Ajusta este valor si tus demos son más altas */
+}
+
+.demo-card.expanded .demo-card-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.demo-canvas-placeholder {
+    padding: 20px;
+    text-align: center;
+    color: #999;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Ocultar la barra lateral en móviles */
 @media screen and (max-width: 800px) {
 

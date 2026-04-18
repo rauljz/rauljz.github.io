@@ -447,6 +447,7 @@ html {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    align-items: start; /* <--- ESTA ES LA LÍNEA MÁGICA */
 }
 
 .demo-card {
@@ -510,6 +511,64 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* --- NUEVOS ESTILOS PARA DEMOS DETALLADAS --- */
+.demo-card.expanded .demo-card-content {
+    max-height: 800px; /* Aumentado para que quepa más texto */
+}
+
+.demo-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.demo-info {
+    flex: 1;
+    min-width: 250px;
+    text-align: left;
+}
+
+.demo-info h4 {
+    color: #00599C;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.demo-info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.demo-info ul {
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.demo-info li {
+    font-size: 0.85rem;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+.demo-interactive {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dashed #ccc;
 }
 
 /* Ocultar la barra lateral en móviles */

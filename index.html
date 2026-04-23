@@ -3,11 +3,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
 -->
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head> 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Raúl Jiménez</title>
+        <title>Raúl Jiménez | AI & MLOps Engineer</title>
+        <meta name="description" content="Portfolio of Raúl Jiménez, AI and MLOps Engineer focused on LLMs, cloud infrastructure, and production-ready machine learning systems.">
+        <meta name="theme-color" content="#0b1020">
         <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/be02131930.js" crossorigin="anonymous"></script>
@@ -27,14 +29,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
                 <nav>
                     <ul>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#portfolio">Projects</a></li>
-                        <li><a href="#demos">Demos</a></li>
-                        <li><a href="#experience">Experience</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#certifications">Certifications</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#about" data-i18n="nav_about">About Me</a></li>
+                        <li><a href="#portfolio" data-i18n="nav_projects">Projects</a></li>
+                        <li><a href="#featured-projects" data-i18n="nav_featured">Featured</a></li>
+                        <li><a href="#demos" data-i18n="nav_demos">Demos</a></li>
+                        <li><a href="#experience" data-i18n="nav_experience">Experience</a></li>
+                        <li><a href="#education" data-i18n="nav_education">Education</a></li>
+                        <li><a href="#certifications" data-i18n="nav_certifications">Certifications</a></li>
+                        <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+                        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -44,39 +47,57 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             <div class="main-content">
 
                 <div class="language-selector">
-                    <button onclick="googleTranslate('es')">🇪🇸 Español</button>
-                    <button onclick="googleTranslate('en')">🇬🇧 English</button>
+                    <button onclick="setLanguage('es')">🇪🇸 Español</button>
+                    <button onclick="setLanguage('en')">🇬🇧 English</button>
                 </div>
-                
-                <div id="google_translate_element"></div>
-                
 
-                <h1>Raúl Jiménez</h1>
-                <img src="assets/Raul.jpeg" alt="Foto de Raúl Jiménez" class="profile-photo1">
-                <h2>Computer Science Engineer</h2>
-                <p>Welcome to my professional portfolio</p>
-                <a href="assets/CV.pdf" class="btn" download="Raul_Jimenez_CV.pdf">Download my CV</a>
+                <div class="hero-content">
+                    <p class="hero-kicker" data-i18n="hero_kicker">AI ENGINEERING · LLMOPS · CLOUD</p>
+                    <h1>Raúl Jiménez</h1>
+                    <img src="assets/Raul.jpeg" alt="Foto de Raúl Jiménez" class="profile-photo1">
+                    <h2 data-i18n="hero_title">AI & MLOps Engineer</h2>
+                    <p class="hero-description" data-i18n="hero_description">I design and deploy reliable AI products, from model experimentation to scalable production infrastructure.</p>
+                    <div class="hero-cta">
+                        <a href="assets/CV.pdf" class="btn" download="Raul_Jimenez_CV.pdf" data-i18n="hero_cta_cv">Download CV</a>
+                        <a href="#contact" class="btn btn-secondary" data-i18n="hero_cta_contact">Contact me</a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <span class="metric-value">3+</span>
+                            <span class="metric-label" data-i18n="metric_years">Years in AI</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">6+</span>
+                            <span class="metric-label" data-i18n="metric_demos">Live ML demos</span>
+                        </div>
+                        <div class="metric-card">
+                            <span class="metric-value">10+</span>
+                            <span class="metric-label" data-i18n="metric_tools">Production tools</span>
+                        </div>
+                    </div>
+                </div>
 
                 
 
                 <!-- Iconos sociales -->
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/rauljz" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/JisuRaul" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/rauljzz" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/rauljz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://x.com/JisuRaul" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/rauljzz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
         </div>
 
         <nav class="horizontal-nav">
-            <a href="#portfolio">Projects</a>
-            <a href="#demos">Demos</a>
-            <a href="#experience">Experience</a>
-            <a href="#education">Education</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <a href="#portfolio" data-i18n="nav_projects">Projects</a>
+            <a href="#featured-projects" data-i18n="nav_featured">Featured</a>
+            <a href="#demos" data-i18n="nav_demos">Demos</a>
+            <a href="#experience" data-i18n="nav_experience">Experience</a>
+            <a href="#education" data-i18n="nav_education">Education</a>
+            <a href="#certifications" data-i18n="nav_certifications">Certifications</a>
+            <a href="#skills" data-i18n="nav_skills">Skills</a>
+            <a href="#contact" data-i18n="nav_contact">Contact</a>
         </nav>
 
 
@@ -85,12 +106,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         <!-- Secciones -->
 
         <section id="about">
-            <h2>About Me</h2>
-            <p>Computer Engineer specializing in Computation, a field that excites me because it allows me to turn ideas into real solutions. 
+            <h2 data-i18n="about_title">About Me</h2>
+            <p data-i18n="about_text">Computer Engineer specializing in Computation, a field that excites me because it allows me to turn ideas into real solutions. 
                 I've always been fascinated by understanding how things work, and computing has given me the tools to explore and create. 
                 I love diving into its different branches, such as artificial intelligence, machine learning, and algorithm optimization, 
                 always looking for the most efficient way to solve problems. I enjoy tackling new challenges, constantly learning, 
                 and finding better ways to do things.</p>
+            <div class="highlight-grid">
+                <article class="highlight-card">
+                    <h3 data-i18n="about_card1_title">End-to-end AI delivery</h3>
+                    <p data-i18n="about_card1_text">From data and experimentation to deployment, monitoring, and iteration in production.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3 data-i18n="about_card2_title">Strong MLOps mindset</h3>
+                    <p data-i18n="about_card2_text">Infrastructure-as-code, reproducibility, CI/CD, and scalable cloud workflows.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3 data-i18n="about_card3_title">Business impact first</h3>
+                    <p data-i18n="about_card3_text">I focus on practical solutions that improve user outcomes and team efficiency.</p>
+                </article>
+            </div>
         </section>
 
 
@@ -98,7 +133,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
 
         <section id="portfolio">
-            <h2>Projects</h2>
+            <h2 data-i18n="projects_title">Projects</h2>
             <div class="project-cards">
                 <!-- Tarjeta de Proyecto 1 -->
                 <div class="project-card">
@@ -111,7 +146,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <span class="tech-icon">Python</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/rauljz/Computer-Engineering-UHU" target="_blank">
+                        <a href="https://github.com/rauljz/Computer-Engineering-UHU" target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-github"></i> GitHub
                         </a>
                     </div>
@@ -128,7 +163,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <span class="tech-icon">ML/DL</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/rauljz/DataScience_Bootcamp" target="_blank">
+                        <a href="https://github.com/rauljz/DataScience_Bootcamp" target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-github"></i> GitHub
                         </a>
                     </div>
@@ -143,29 +178,52 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                         <span class="tech-icon">ML/DL</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/rauljz/MarioBros_QLearning" target="_blank">
+                        <a href="https://github.com/rauljz/MarioBros_QLearning" target="_blank" rel="noopener noreferrer">
                             <i class="fa fa-github"></i> GitHub
                         </a>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <section id="featured-projects">
+            <h2 data-i18n="featured_title">Featured Projects</h2>
+            <p class="featured-subtitle" data-i18n="featured_subtitle">Two projects that best represent my AI engineering and MLOps approach.</p>
+            <div class="featured-grid">
+                <article class="featured-card">
+                    <img src="assets/deeplearning.jpg" alt="Polyp detection project">
+                    <div class="featured-content">
+                        <h3 data-i18n="featured_1_title">Polyp Detection with Deep Learning</h3>
+                        <p data-i18n="featured_1_text">Applied computer vision to improve gastrointestinal disease detection with robust research workflows.</p>
+                        <a href="https://github.com/rauljz/Computer-Engineering-UHU" target="_blank" rel="noopener noreferrer" class="featured-link">GitHub</a>
+                    </div>
+                </article>
+                <article class="featured-card">
+                    <img src="assets/data_science.jpg" alt="Data science curriculum project">
+                    <div class="featured-content">
+                        <h3 data-i18n="featured_2_title">DataScience Bootcamp</h3>
+                        <p data-i18n="featured_2_text">A structured path covering Python, SQL, machine learning, and practical projects for real-world impact.</p>
+                        <a href="https://github.com/rauljz/DataScience_Bootcamp" target="_blank" rel="noopener noreferrer" class="featured-link">GitHub</a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
         <section id="demos">
-            <h2>Live Demos 🎮</h2>
-            <p style="margin-bottom: 20px; color: #666;">Interactive demos running in your browser.</p>
+            <h2 data-i18n="demos_title">Live Demos 🎮</h2>
+            <p style="margin-bottom: 20px; color: #666;" data-i18n="demos_subtitle">Interactive demos running in your browser.</p>
 
             <div class="demos-header">
                 <div class="demo-filters" id="demo-filters">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="ml">ML</button>
-                    <button class="filter-btn" data-filter="cv">Computer Vision</button>
-                    <button class="filter-btn" data-filter="llm">LLM</button>
+                    <button class="filter-btn active" data-filter="all" data-i18n="demos_filter_all">All</button>
+                    <button class="filter-btn" data-filter="ml" data-i18n="demos_filter_ml">ML</button>
+                    <button class="filter-btn" data-filter="cv" data-i18n="demos_filter_cv">Computer Vision</button>
+                    <button class="filter-btn" data-filter="llm" data-i18n="demos_filter_llm">LLM</button>
                 </div>
                 <div class="demo-actions">
-                    <button id="expand-all">Expand All</button>
+                    <button id="expand-all" data-i18n="demos_expand_all">Expand All</button>
                     <span>|</span>
-                    <button id="collapse-all">Collapse All</button>
+                    <button id="collapse-all" data-i18n="demos_collapse_all">Collapse All</button>
                 </div>
             </div>
 
@@ -174,28 +232,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="ml">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>K-Means Clustering</h3>
-                            <p>Unsupervised grouping algorithm</p>
+                            <h3 data-i18n="demo_kmeans_title">K-Means Clustering</h3>
+                            <p data-i18n="demo_kmeans_subtitle">Unsupervised grouping algorithm</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>K-Means is an unsupervised Machine Learning algorithm used to partition unlabeled data into <strong>K distinct clusters</strong> based on feature similarity (using Euclidean distance).</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_kmeans_concept">K-Means is an unsupervised Machine Learning algorithm used to partition unlabeled data into K distinct clusters based on feature similarity (using Euclidean distance).</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Iterative refinement of cluster centroids.</li>
-                                    <li>Minimizes within-cluster variance (inertia).</li>
-                                    <li><strong>Use cases:</strong> Customer segmentation, anomaly detection, and image compression.</li>
+                                    <li data-i18n="demo_kmeans_li1">Iterative refinement of cluster centroids.</li>
+                                    <li data-i18n="demo_kmeans_li2">Minimizes within-cluster variance (inertia).</li>
+                                    <li data-i18n="demo_kmeans_li3">Use cases: Customer segmentation, anomaly detection, and image compression.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive">
                                 <canvas id="kmeans-canvas" width="280" height="180" style="background: #f0f0f0; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
                                 <div style="margin-top: 15px; display: flex; gap: 10px;">
-                                    <button id="kmeans-generate" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">New Data</button>
-                                    <button id="kmeans-step" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Run Step</button>
+                                    <button id="kmeans-generate" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_kmeans_btn_new">New Data</button>
+                                    <button id="kmeans-step" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_kmeans_btn_step">Run Step</button>
                                 </div>
                             </div>
                         </div>
@@ -205,26 +263,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="llm">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>Text Tokenizer</h3>
-                            <p>NLP text-to-vector preprocessing</p>
+                            <h3 data-i18n="demo_tokenizer_title">Text Tokenizer</h3>
+                            <p data-i18n="demo_tokenizer_subtitle">NLP text-to-vector preprocessing</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>Large Language Models (LLMs) do not read text character by character. They use tokenizers to break text into manageable sub-words or chunks, mapping each to a unique <strong>Token ID</strong> in their vocabulary space.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_tokenizer_concept">Large Language Models (LLMs) do not read text character by character. They use tokenizers to break text into manageable sub-words or chunks, mapping each to a unique token ID in their vocabulary space.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Simulates sub-word tokenization (like BPE or WordPiece).</li>
-                                    <li>Transforms human text into numeric tensors for AI.</li>
-                                    <li><strong>Relevance:</strong> Crucial for Prompt Engineering and LLMOps inference pipelines.</li>
+                                    <li data-i18n="demo_tokenizer_li1">Simulates sub-word tokenization (like BPE or WordPiece).</li>
+                                    <li data-i18n="demo_tokenizer_li2">Transforms human text into numeric tensors for AI.</li>
+                                    <li data-i18n="demo_tokenizer_li3">Relevance: Crucial for Prompt Engineering and LLMOps inference pipelines.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive" style="align-items: stretch;">
-                                <textarea id="tokenizer-input" rows="2" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: monospace; resize: none;" placeholder="Type a sentence here..."></textarea>
-                                <button id="tokenize-btn" style="margin-top: 10px; padding: 8px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;">Generate Tokens</button>
+                                <textarea id="tokenizer-input" rows="2" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: monospace; resize: none;" placeholder="Type a sentence here..." data-i18n-placeholder="demo_tokenizer_placeholder"></textarea>
+                                <button id="tokenize-btn" style="margin-top: 10px; padding: 8px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_tokenizer_btn">Generate Tokens</button>
                                 <div id="tokenizer-output" style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 6px;"></div>
                             </div>
                         </div>
@@ -234,28 +292,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="cv">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>Object Detection</h3>
-                            <p>Computer Vision inference simulation</p>
+                            <h3 data-i18n="demo_od_title">Object Detection</h3>
+                            <p data-i18n="demo_od_subtitle">Computer Vision inference simulation</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>Simulates the output of Convolutional Neural Networks (CNNs) like YOLO or Faster R-CNN. The model identifies regions of interest, applies bounding boxes, and assigns a classification probability.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_od_concept">Simulates the output of Convolutional Neural Networks (CNNs) like YOLO or Faster R-CNN. The model identifies regions of interest, applies bounding boxes, and assigns a classification probability.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Spatial feature extraction & anchor boxes.</li>
-                                    <li>Confidence thresholds for predictions.</li>
-                                    <li><strong>Use cases:</strong> Medical imaging (e.g., Polyp detection), autonomous driving.</li>
+                                    <li data-i18n="demo_od_li1">Spatial feature extraction and anchor boxes.</li>
+                                    <li data-i18n="demo_od_li2">Confidence thresholds for predictions.</li>
+                                    <li data-i18n="demo_od_li3">Use cases: Medical imaging (e.g., polyp detection), autonomous driving.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive">
                                 <canvas id="od-canvas" width="280" height="150" style="background: #e2e8f0; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
                                 <div style="margin-top: 15px; display: flex; gap: 10px;">
-                                    <button id="od-detect-btn" style="padding: 6px 12px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;">Run Inference</button>
-                                    <button id="od-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">Clear</button>
+                                    <button id="od-detect-btn" style="padding: 6px 12px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_od_btn_run">Run Inference</button>
+                                    <button id="od-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_od_btn_clear">Clear</button>
                                 </div>
                             </div>
                         </div>
@@ -265,28 +323,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="ml">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>Gradient Descent</h3>
-                            <p>Mathematical optimization for Loss functions</p>
+                            <h3 data-i18n="demo_gd_title">Gradient Descent</h3>
+                            <p data-i18n="demo_gd_subtitle">Mathematical optimization for Loss functions</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>The core optimization algorithm behind Deep Learning. It updates model weights iteratively by moving in the direction of the steepest descent (negative gradient) of the Loss function landscape.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_gd_concept">The core optimization algorithm behind Deep Learning. It updates model weights iteratively by moving in the direction of the steepest descent (negative gradient) of the Loss function landscape.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Visualizes a learning rate ($\alpha$) applied to a derivative.</li>
-                                    <li>Strives to find the global minimum.</li>
-                                    <li><strong>Relevance:</strong> Backpropagation in Neural Networks.</li>
+                                    <li data-i18n="demo_gd_li1">Visualizes a learning rate applied to a derivative.</li>
+                                    <li data-i18n="demo_gd_li2">Strives to find the global minimum.</li>
+                                    <li data-i18n="demo_gd_li3">Relevance: Backpropagation in Neural Networks.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive">
                                 <canvas id="gd-canvas" width="280" height="150" style="background: #f8fafc; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
                                 <div style="margin-top: 15px; display: flex; gap: 10px;">
-                                    <button id="gd-step-btn" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;">Iterate (Step)</button>
-                                    <button id="gd-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;">Reset</button>
+                                    <button id="gd-step-btn" style="padding: 6px 12px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_gd_btn_step">Iterate (Step)</button>
+                                    <button id="gd-reset-btn" style="padding: 6px 12px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_gd_btn_reset">Reset</button>
                                 </div>
                             </div>
                         </div>
@@ -296,28 +354,28 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="ml">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>Activation Functions</h3>
-                            <p>Introducing non-linearity in Neural Nets</p>
+                            <h3 data-i18n="demo_af_title">Activation Functions</h3>
+                            <p data-i18n="demo_af_subtitle">Introducing non-linearity in Neural Nets</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>Without activation functions, a deep neural network would simply be a linear regression model. These functions decide whether a neuron should "fire", enabling the network to learn complex patterns.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_af_concept">Without activation functions, a deep neural network would simply be a linear regression model. These functions decide whether a neuron should fire, enabling the network to learn complex patterns.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li><strong>ReLU:</strong> Fast and prevents vanishing gradients.</li>
-                                    <li><strong>Sigmoid/Tanh:</strong> Great for probabilities but prone to saturation.</li>
+                                    <li data-i18n="demo_af_li1">ReLU: Fast and helps prevent vanishing gradients.</li>
+                                    <li data-i18n="demo_af_li2">Sigmoid/Tanh: Great for probabilities but prone to saturation.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive">
                                 <canvas id="af-canvas" width="280" height="150" style="background: #fff; border-radius: 8px; border: 1px solid #ccc; max-width: 100%;"></canvas>
                                 <select id="af-select" style="margin-top: 15px; width: 100%; padding: 6px; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins'; outline: none;">
-                                    <option value="relu">ReLU (Rectified Linear Unit)</option>
-                                    <option value="sigmoid">Sigmoid Function</option>
-                                    <option value="tanh">Hyperbolic Tangent (Tanh)</option>
+                                    <option value="relu" data-i18n="demo_af_opt_relu">ReLU (Rectified Linear Unit)</option>
+                                    <option value="sigmoid" data-i18n="demo_af_opt_sigmoid">Sigmoid Function</option>
+                                    <option value="tanh" data-i18n="demo_af_opt_tanh">Hyperbolic Tangent (Tanh)</option>
                                 </select>
                             </div>
                         </div>
@@ -326,33 +384,33 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="llm">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>RAG Architecture</h3>
-                            <p>Retrieval-Augmented Generation Simulator</p>
+                            <h3 data-i18n="demo_rag_title">RAG Architecture</h3>
+                            <p data-i18n="demo_rag_subtitle">Retrieval-Augmented Generation Simulator</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>RAG enhances Large Language Models by connecting them to external knowledge bases. Before answering, the system queries a <strong>Vector Database</strong> (like Pinecone or FAISS) to retrieve factual context.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_rag_concept">RAG enhances Large Language Models by connecting them to external knowledge bases. Before answering, the system queries a vector database (like Pinecone or FAISS) to retrieve factual context.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Eliminates LLM hallucinations by grounding answers in data.</li>
-                                    <li>Combines Semantic Search (Embeddings) with Generation.</li>
-                                    <li><strong>Relevance:</strong> Enterprise AI systems, private data chatbots.</li>
+                                    <li data-i18n="demo_rag_li1">Reduces hallucinations by grounding answers in data.</li>
+                                    <li data-i18n="demo_rag_li2">Combines semantic search (embeddings) with generation.</li>
+                                    <li data-i18n="demo_rag_li3">Relevance: Enterprise AI systems and private-data chatbots.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive" style="align-items: stretch;">
-                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;"><strong>Vector DB Knowledge:</strong> "Raúl is an AI Engineer.", "He works in Zaragoza.", "He specializes in MLOps."</div>
-                                <input type="text" id="rag-input" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins';" placeholder="Ask about Raúl..." value="Where does Raúl work?">
-                                <button id="rag-btn" style="margin-top: 10px; padding: 8px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;">Run RAG Pipeline</button>
+                                <div style="font-size: 0.8rem; color: #666; margin-bottom: 5px;"><strong data-i18n="demo_rag_knowledge">Vector DB Knowledge:</strong> "Raúl is an AI Engineer.", "He works in Zaragoza.", "He specializes in MLOps."</div>
+                                <input type="text" id="rag-input" style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc; font-family: 'Poppins';" placeholder="Ask about Raúl..." data-i18n-placeholder="demo_rag_placeholder" value="Where does Raúl work?">
+                                <button id="rag-btn" style="margin-top: 10px; padding: 8px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer;" data-i18n="demo_rag_btn">Run RAG Pipeline</button>
                                 
                                 <div id="rag-step1" style="margin-top: 15px; font-size: 0.85rem; padding: 8px; background: #e2e8f0; border-radius: 5px; display: none;">
-                                    <strong>1. Context Retrieved:</strong> <span id="rag-context" style="color: #00599C;"></span>
+                                    <strong data-i18n="demo_rag_step1">1. Context Retrieved:</strong> <span id="rag-context" style="color: #00599C;"></span>
                                 </div>
                                 <div id="rag-step2" style="margin-top: 5px; font-size: 0.85rem; padding: 8px; background: #dcfce7; border-radius: 5px; display: none;">
-                                    <strong>2. LLM Output:</strong> <span id="rag-output" style="color: #166534;"></span>
+                                    <strong data-i18n="demo_rag_step2">2. LLM Output:</strong> <span id="rag-output" style="color: #166534;"></span>
                                 </div>
                             </div>
                         </div>
@@ -361,29 +419,29 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <div class="demo-card" data-category="cv">
                     <div class="demo-card-header">
                         <div class="demo-title">
-                            <h3>CNN Convolutions</h3>
-                            <p>Mathematical Image Filtering</p>
+                            <h3 data-i18n="demo_cnn_title">CNN Convolutions</h3>
+                            <p data-i18n="demo_cnn_subtitle">Mathematical Image Filtering</p>
                         </div>
                         <span class="demo-toggle">+</span>
                     </div>
                     <div class="demo-card-content">
                         <div class="demo-body">
                             <div class="demo-info">
-                                <h4>Concept Overview</h4>
-                                <p>Convolutional Neural Networks (CNNs) process images by sliding mathematical matrices called <strong>Kernels (or filters)</strong> over the pixels to extract spatial features like edges, corners, and textures.</p>
-                                <h4>Key Highlights</h4>
+                                <h4 data-i18n="demo_concept_overview">Concept Overview</h4>
+                                <p data-i18n="demo_cnn_concept">Convolutional Neural Networks (CNNs) process images by sliding mathematical matrices called kernels (or filters) over pixels to extract spatial features like edges, corners, and textures.</p>
+                                <h4 data-i18n="demo_key_highlights">Key Highlights</h4>
                                 <ul>
-                                    <li>Reduces spatial dimensions while capturing deep features.</li>
-                                    <li>Core operation behind models like ResNet and YOLO.</li>
-                                    <li><strong>Relevance:</strong> Polyp Detection (Medical Imaging), Autonomous Driving.</li>
+                                    <li data-i18n="demo_cnn_li1">Reduces spatial dimensions while capturing deep features.</li>
+                                    <li data-i18n="demo_cnn_li2">Core operation behind models like ResNet and YOLO.</li>
+                                    <li data-i18n="demo_cnn_li3">Relevance: Polyp detection (medical imaging) and autonomous driving.</li>
                                 </ul>
                             </div>
                             <div class="demo-interactive">
                                 <canvas id="conv-canvas" width="150" height="150" style="background: #fff; border-radius: 8px; border: 1px solid #ccc;"></canvas>
                                 <div style="margin-top: 15px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;">
-                                    <button class="conv-btn" data-filter="original" style="padding: 6px 10px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;">Original</button>
-                                    <button class="conv-btn" data-filter="edge" style="padding: 6px 10px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;">Edge Detection</button>
-                                    <button class="conv-btn" data-filter="sharpen" style="padding: 6px 10px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;">Sharpen</button>
+                                    <button class="conv-btn" data-filter="original" style="padding: 6px 10px; background: #555; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;" data-i18n="demo_cnn_btn_original">Original</button>
+                                    <button class="conv-btn" data-filter="edge" style="padding: 6px 10px; background: #1c3c3c; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;" data-i18n="demo_cnn_btn_edge">Edge Detection</button>
+                                    <button class="conv-btn" data-filter="sharpen" style="padding: 6px 10px; background: #00599C; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 0.8rem;" data-i18n="demo_cnn_btn_sharpen">Sharpen</button>
                                 </div>
                             </div>
                         </div>
@@ -393,13 +451,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         </section>
 
         <section id="experience">
-            <h2>Work Experience 🧑‍💻</h2>
+            <h2 data-i18n="experience_title">Work Experience 🧑‍💻</h2>
             <div class="experience-item">
                 <img src="assets/multiverse.png" alt="Logotipo de Multiverse" style="width: 100px; height: auto;">
-                <h3>MLOps Engineer at Multiverse Computing</h3>
-                <p><strong>Duration:</strong> febr. 2026 - Present</p>
-                <p><strong>Location:</strong> Zaragoza, Aragón, España · Hybrid</p>
-                <p>As a core contributor to the Multiverse Foundry project—an all-in-one enterprise application—I integrate model compression (via CompactifAI), 
+                <h3 data-i18n="exp1_title">MLOps Engineer at Multiverse Computing</h3>
+                <p data-i18n="exp1_duration">Duration: Feb. 2026 - Present</p>
+                <p data-i18n="exp1_location">Location: Zaragoza, Aragon, Spain · Hybrid</p>
+                <p data-i18n="exp1_desc">As a core contributor to the Multiverse Foundry project—an all-in-one enterprise application—I integrate model compression (via CompactifAI), 
                     fine-tuning, and deployment pipelines. My responsibilities include managing GPU allocation and cluster orchestration utilizing Kubernetes, 
                     SkyPilot, and Coder, as well as operating and scaling cloud infrastructure on AWS (EC2, S3, ECR) to support robust machine learning workflows. 
                     Additionally, I focus on automating the lifecycle of large language model (LLM) applications by packaging them with Helm and managing 
@@ -407,10 +465,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
             <div class="experience-item">
                 <img src="assets/atrebo.png" alt="Logotipo de Atrebo" style="width: 100px; height: auto;">
-                <h3>Artificial Intelligence Engineer at Atrebo</h3>
-                <p><strong>Duration:</strong> jul. 2025 - febr. 2026</p>
-                <p><strong>Location:</strong> Sevilla, Andalucía, España · Hybrid</p>
-                <p>Artificial Intelligence Engineer at Atrebo: Development and deployment of enterprise AI solutions using Large Language Models
+                <h3 data-i18n="exp2_title">Artificial Intelligence Engineer at Atrebo</h3>
+                <p data-i18n="exp2_duration">Duration: Jul. 2025 - Feb. 2026</p>
+                <p data-i18n="exp2_location">Location: Seville, Andalusia, Spain · Hybrid</p>
+                <p data-i18n="exp2_desc">Artificial Intelligence Engineer at Atrebo: Development and deployment of enterprise AI solutions using Large Language Models
                 (LLMs) and Retrieval-Augmented Generation (RAG). Responsibilities included prompt engineering, fine-tuning, and model
                 optimization (quantization, distillation, LoRA), integration of scalable pipelines (LangChain, FastAPI, Docker, Kubernetes), and
                 model evaluation with advanced metrics. Experience with MLOps practices (MLflow, monitoring, reproducibility), vector databases
@@ -418,10 +476,10 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
             <div class="experience-item">
                 <img src="assets/nttdata.png" alt="Logotipo de NTT DATA" style="width: 100px; height: auto;">
-                <h3>Artificial Intelligence Intern at NTT DATA Europe & Latam</h3>
-                <p><strong>Duration:</strong> jul. 2024 - sept. 2024 (3 months)</p>
-                <p><strong>Location:</strong> Sevilla, Andalucía, España · Hybrid</p>
-                <p>I drive digital transformation in the energy sector by developing high-performance client applications in Python 
+                <h3 data-i18n="exp3_title">Artificial Intelligence Intern at NTT DATA Europe & Latam</h3>
+                <p data-i18n="exp3_duration">Duration: Jul. 2024 - Sept. 2024 (3 months)</p>
+                <p data-i18n="exp3_location">Location: Seville, Andalusia, Spain · Hybrid</p>
+                <p data-i18n="exp3_desc">I drive digital transformation in the energy sector by developing high-performance client applications in Python 
                 and optimising ETL processes. My work ranges from technical architecture and system maintenance to orchestrating deployments 
                 in production environments under strict version control standards. Thanks to a deep understanding of the business domain, 
                 I work directly with end users to design Machine Learning-based solutions, transforming complex requirements into scalable 
@@ -431,61 +489,61 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
 
         <section id="education">
-            <h2>Education 🎓</h2>
+            <h2 data-i18n="education_title">Education 🎓</h2>
 
             <div class="education-item">
                 <img src="assets/UHU.png" alt="Logotipo de Universidad de Huelva" style="width: 100px; height: auto;">
                 <h3>University of Huelva</h3>
-                <p><strong>Title:</strong> Master's Degree in Computer Engineering - Big Data & Cloud Computing</p>
-                <p><strong>Duration:</strong> oct. 2025 - Present</p>
+                <p data-i18n="edu1_title">Title: Master's Degree in Computer Engineering - Big Data & Cloud Computing</p>
+                <p data-i18n="edu1_duration">Duration: Oct. 2025 - Present</p>
             </div>
 
             <div class="education-item">
                 <img src="assets/UHU.png" alt="Logotipo de Universidad de Huelva" style="width: 100px; height: auto;">
                 <h3>University of Huelva</h3>
-                <p><strong>Title:</strong> Bachelor’s Degree in Computer Engineering, Computational Science</p>
-                <p><strong>Duration:</strong> sept. 2021 - jul. 2025</p>
+                <p data-i18n="edu2_title">Title: Bachelor’s Degree in Computer Engineering, Computational Science</p>
+                <p data-i18n="edu2_duration">Duration: Sept. 2021 - Jul. 2025</p>
             </div>
 
             <div class="education-item">
                 <img src="assets/trinity.jpg" alt="Logotipo de Trinity College Dublin" style="width: 100px; height: auto;">
                 <h3>Trinity College Dublin</h3>
-                <p><strong>Title:</strong> B1, Teaching English as a Foreign Language</p>
-                <p><strong>Duration:</strong> Jan. 2018 - jun. 2018</p>
+                <p data-i18n="edu3_title">Title: B1, Teaching English as a Foreign Language</p>
+                <p data-i18n="edu3_duration">Duration: Jan. 2018 - Jun. 2018</p>
             </div>
         </section>
 
 
         <section id="certifications">
-            <h2>Licenses and certifications 📜</h2>
+            <h2 data-i18n="certifications_title">Licenses and certifications 📜</h2>
 
             <div class="certification-item">
                 <img src="assets/scrum.png" alt="Logotipo de Scrum" style="width: 100px; height: auto;">
                 <h3>Professional Scrum Product Owner I (PSPO I)</h3>
-                <p><strong>Expedition:</strong> Jan. 2026</p>
-                <p><strong>Credential ID:</strong> https://www.scrum.org/certificates/1283195</p>
+                <p data-i18n="cert1_issue">Issued: Jan. 2026</p>
+                <p data-i18n="cert1_id">Credential ID: https://www.scrum.org/certificates/1283195</p>
             </div>
 
             <div class="certification-item">
                 <img src="assets/stanford.jpg" alt="Logotipo de Udemy" style="width: 100px; height: auto;">
                 <h3>Program: Machine Learning</h3>
-                <p><strong>Expedition:</strong> Nov. 2025</p>
-                <p><strong>Credential ID:</strong> ENELD3KY5ALY</p>
+                <p data-i18n="cert2_issue">Issued: Nov. 2025</p>
+                <p data-i18n="cert2_id">Credential ID: ENELD3KY5ALY</p>
             </div>
 
             <div class="certification-item">
                 <img src="assets/UDEMY.png" alt="Logotipo de Udemy" style="width: 100px; height: auto;">
                 <h3>The Data Science Course: Complete Data Science Bootcamp</h3>
-                <p><strong>Expedition:</strong> Aug. 2024</p>
-                <p><strong>Credential ID:</strong> UC-29308443-ca19-4a9b-acb7-455802922f2d</p>
+                <p data-i18n="cert3_issue">Issued: Aug. 2024</p>
+                <p data-i18n="cert3_id">Credential ID: UC-29308443-ca19-4a9b-acb7-455802922f2d</p>
             </div>
         </section>
 
         <section id="skills">
-            <h2>Skills</h2>
+            <h2 data-i18n="skills_title">Skills</h2>
 
             <div>
-                <h3>Generative AI & LLMs</h3>
+                <h3 data-i18n="skills_group_1">Generative AI & LLMs</h3>
                 <p>
                     <img src="https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white" alt="LangChain">
                     <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-FFD21E?style=for-the-badge&logoColor=black" alt="Hugging Face">
@@ -496,7 +554,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
 
             <div>
-                <h3>MLOps & Cloud Architecture</h3>
+                <h3 data-i18n="skills_group_2">MLOps & Cloud Architecture</h3>
                 <p>
                     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
                     <img src="https://img.shields.io/badge/kubernetes-326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
@@ -508,7 +566,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
 
             <div>
-                <h3>Big Data Ecosystem</h3>
+                <h3 data-i18n="skills_group_3">Big Data Ecosystem</h3>
                 <p>
                     <img src="https://img.shields.io/badge/Apache%20Spark-F25022?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
                     <img src="https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=for-the-badge&logo=apachehadoop&logoColor=black" alt="Hadoop">
@@ -517,7 +575,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
 
             <div>
-                <h3>Data Science & Machine Learning</h3>
+                <h3 data-i18n="skills_group_4">Data Science & Machine Learning</h3>
                 <p>
                     <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white" alt="PyTorch">
                     <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
@@ -528,7 +586,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
 
             <div>
-                <h3>Programming Languages</h3>
+                <h3 data-i18n="skills_group_5">Programming Languages</h3>
                 <p>
                     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
                     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
@@ -539,7 +597,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             </div>
             
             <div>
-                <h3>Tools</h3>
+                <h3 data-i18n="skills_group_6">Tools</h3>
                 <p>
                     <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
                     <img src="https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white" alt="Git">
@@ -552,38 +610,38 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2 data-i18n="contact_title">Contact</h2>
             
             <form id="contact-form" class="contact-form">
                 <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="name" data-i18n="form_name_label">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your full name" data-i18n-placeholder="form_name_placeholder" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label for="email" data-i18n="form_email_label">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your@email.com" data-i18n-placeholder="form_email_placeholder" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <label for="message" data-i18n="form_message_label">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." data-i18n-placeholder="form_message_placeholder" required></textarea>
                 </div>
 
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" data-i18n="form_submit">Send Message</button>
             </form>
 
             <!-- Iconos sociales -->
             <div class="social-icons">
-                <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/rauljz" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/JisuRaul" target="_blank"><i class="fab fa-twitter"></i></a>
-                <a href="https://www.instagram.com/rauljzz" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/raúl-jiménez-728793283" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rauljz" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/JisuRaul" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/rauljzz" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
 
             <footer>
                 <!-- Este será el pie de página -->
-                <p>Copyright &copy; 2025 - Raúl Jiménez</p>
+                <p data-i18n="footer_copy">Copyright &copy; 2025 - Raúl Jiménez</p>
             </footer>
 
         </section>
@@ -602,9 +660,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 
                 emailjs.sendForm('service_v9f7ezi', 'template_gem8b8f', this)
                     .then(function() {
-                        alert('Mensaje enviado correctamente');
+                        alert(getTranslation('contact_success'));
                     }, function(error) {
-                        alert('Error al enviar el mensaje: ' + JSON.stringify(error));
+                        alert(getTranslation('contact_error') + ': ' + JSON.stringify(error));
                     });
             });
         </script>
